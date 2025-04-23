@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Tutorials & Blogs | Rana Saha</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../public/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="../../index.html">Rana Saha</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../notes.html">Notes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../../Tutorials/tutorial.html"
+                >Tutorials/Blogs</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="laravel-collections" class="container my-5">
+        <div class="bg-light p-4 rounded shadow-sm">
+      
+          <h1 class="mb-4 text-primary">Understanding <code>Laravel Collections</code></h1>
+      
+          <p><strong>What is a Laravel Collection?</strong><br>
+            A Laravel Collection is a powerful wrapper around arrays that provides a variety of chainable methods for working with data efficiently. It makes complex data manipulation simpler and more expressive.
+          </p>
+      
+          <h4 class="text-success">📌 When Do We Use It?</h4>
+          <ul>
+            <li>When retrieving data from the database (e.g., <code>User::all()</code> returns a Collection).</li>
+            <li>When transforming, filtering, or sorting data cleanly.</li>
+            <li>When handling arrays and aiming for readable, maintainable code.</li>
+          </ul>
+      
+          <h4 class="text-secondary">✨ Benefits</h4>
+          <ul>
+            <li>Chainable methods like <code>map</code>, <code>filter</code>, <code>pluck</code>, etc.</li>
+            <li>Cleaner and more readable code.</li>
+            <li>Consistent behavior across arrays and Eloquent results.</li>
+            <li>Reduces boilerplate logic for complex operations.</li>
+          </ul>
+      
+          <h4 class="text-info">🔧 Creating a Collection</h4>
+          <div class="bg-dark text-white p-3 rounded mb-4">
+            <pre class="mb-0"><code>$collection = collect([1, 2, 3, 4]);</code></pre>
+          </div>
+      
+          <h3 class="text-success">⚙️ Common Collection Methods</h3>
+          <table class="table table-bordered mb-4">
+            <thead>
+              <tr>
+                <th>Method</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>map()</td><td>Modify each item</td></tr>
+              <tr><td>filter()</td><td>Keep only certain items</td></tr>
+              <tr><td>pluck()</td><td>Get values of a specific key</td></tr>
+              <tr><td>where()</td><td>Filter based on key-value match</td></tr>
+              <tr><td>sortBy()</td><td>Sort items by key</td></tr>
+              <tr><td>sum()</td><td>Add up numeric values</td></tr>
+              <tr><td>groupBy()</td><td>Group items by a key</td></tr>
+              <tr><td>each()</td><td>Loop through each item</td></tr>
+            </tbody>
+          </table>
+      
+          <h3 class="text-success">💡 Practical Examples</h3>
+      
+          <h5>1. Modify Each Item (map)</h5>
+          <div class="bg-dark text-white p-3 rounded mb-3">
+            <pre class="mb-0"><code>$users = collect([
+    ['name' => 'John', 'age' => 28],
+    ['name' => 'Jane', 'age' => 34],
+]);
+
+$updated = $users->map(function ($user) {
+    $user['age'] += 1;
+    return $user;
+});</code></pre>
+          </div>
+      
+          <h5>2. Filter Items</h5>
+          <div class="bg-dark text-white p-3 rounded mb-3">
+            <pre class="mb-0"><code>$filtered = $users->filter(function ($user) {
+    return $user['age'] > 30;
+});</code></pre>
+          </div>
+      
+          <h5>3. Pluck Specific Key</h5>
+          <div class="bg-dark text-white p-3 rounded mb-3">
+            <pre class="mb-0"><code>$names = $users->pluck('name');  // ['John', 'Jane']</code></pre>
+          </div>
+      
+          <h5>4. Get Total</h5>
+          <div class="bg-dark text-white p-3 rounded mb-3">
+            <pre class="mb-0"><code>$totalAge = $users->sum('age');</code></pre>
+          </div>
+      
+          <h5>5. From Eloquent</h5>
+          <div class="bg-dark text-white p-3 rounded mb-3">
+            <pre class="mb-0"><code>$users = User::where('active', true)->get(); // Returns a Collection
+$names = $users->pluck('name');</code></pre>
+          </div>
+      
+          <h3 class="text-success">📚 Types of Laravel Collections</h3>
+      
+          <h5 class="text-secondary">1. Base Collection</h5>
+          <p><strong>Class:</strong> <code>Illuminate\Support\Collection</code></p>
+          <p>Used for arrays or custom data, created using <code>collect()</code>.</p>
+          <div class="bg-dark text-white p-3 rounded mb-3">
+            <pre class="mb-0"><code>$collection = collect([1, 2, 3, 4]);</code></pre>
+          </div>
+      
+          <h5 class="text-secondary">2. Eloquent Collection</h5>
+          <p><strong>Class:</strong> <code>Illuminate\Database\Eloquent\Collection</code></p>
+          <p>Returned from database queries using Eloquent (e.g., <code>User::all()</code>).</p>
+          <div class="bg-dark text-white p-3 rounded mb-3">
+            <pre class="mb-0"><code>$users = User::all(); // Eloquent\Collection</code></pre>
+          </div>
+          <p>Includes all base methods and model-specific ones like <code>find()</code>, <code>load()</code>, etc.</p>
+      
+          <h5 class="text-secondary">3. Lazy Collection</h5>
+          <p><strong>Class:</strong> <code>Illuminate\Support\LazyCollection</code></p>
+          <p>Optimized for large datasets—loads items one at a time.</p>
+          <div class="bg-dark text-white p-3 rounded mb-3">
+            <pre class="mb-0"><code>use Illuminate\Support\LazyCollection;
+      
+$lazy = LazyCollection::make(function () {
+    for ($i = 0; $i < 1000000; $i++) {
+        yield $i;
+    }
+});</code></pre>
+          </div>
+      
+          <h3 class="text-success">🎯 Final Thoughts</h3>
+          <ul>
+            <li>Collections offer elegant data manipulation.</li>
+            <li>They’re used across Eloquent and array data alike.</li>
+            <li>Perfect for readable, maintainable, and clean code.</li>
+          </ul>
+      
+        </div>
+      </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+      &copy; 2025 Rana Saha. All rights reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
