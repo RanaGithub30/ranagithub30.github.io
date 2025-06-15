@@ -1,140 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rana Saha | Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="./public/css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rana Saha | Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/style.css" />
 
-  <!-- Navbar -->
-  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm"> -->
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top shadow-sm">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Rana Saha</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="./Notes/notes.html">Notes</a></li>
-          <li class="nav-item"><a class="nav-link" href="./Tutorials/tutorial.html">Tutorials/Blogs</a></li>
-        </ul>
-        <button id="theme-toggle" class="btn btn-sm btn-outline-light ms-3">Toggle Theme</button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero text-white text-center py-5 bg-primary">
-    <div class="container">
-      <h1 class="display-4">Hi, I'm <strong>Rana Saha</strong></h1>
-      <p class="lead">Backend Developer | Open Source Contributor | Tech Blogger</p>
-      <a href="https://github.com/RanaGithub30?tab=repositories" target="_blank" class="btn btn-outline-light mt-3">Explore My Work</a>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="py-5">
-    <div class="container text-center">
-      <h2 class="section-title">About Me</h2>
-      <p class="lead">
-        I'm a backend developer with 4+ years of experience in Laravel and Node.js, dedicated to building robust and scalable web applications.
-        I'm passionate about automation, performance, open-source, and mentoring aspiring developers. 
-        I also share insights and tutorials through blogs.
-      </p>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center section-title">Projects</h2>
-      <div class="row">
-        <!-- Project 1 -->
-        <div class="col-md-4 mb-4">
-          <div class="card project-card shadow-sm h-100">
-            <div class="card-body">
-              <h5 class="card-title">Laravel Universal CRUD Generator</h5>
-              <p class="card-text">A Laravel project that automatically generates full CRUD (Create, Read, Update, Delete) functionality for all Eloquent models.</p>
-              <a href="https://github.com/RanaGithub30/CRUD-for-all-Model-in-Laravel" target="_blank" class="btn btn-outline-primary">View on GitHub</a>
-            </div>
-          </div>
-        </div>
-        <!-- Project 2 -->
-        <div class="col-md-4 mb-4">
-          <div class="card project-card shadow-sm h-100">
-            <div class="card-body">
-              <h5 class="card-title">JavaScript Mini Projects Collection</h5>
-              <p class="card-text">A curated collection of mini JavaScript projects demonstrating core concepts like DOM manipulation, API handling, event-driven logic, and interactive UI components.</p>
-              <a href="https://github.com/RanaGithub30/Javascript-Projects" target="_blank" class="btn btn-outline-primary">View on GitHub</a>
-            </div>
-          </div>
-        </div>
-        <!-- Project 3 -->
-        <div class="col-md-4 mb-4">
-          <div class="card project-card shadow-sm h-100">
-            <div class="card-body">
-              <h5 class="card-title">Laravel Infinite Scrolling with AJAX</h5>
-              <p class="card-text">A Laravel demo project implementing infinite scroll pagination using AJAX and jQuery. Seamlessly loads content as users scroll down, enhancing UX and performance.</p>
-              <a href="https://github.com/RanaGithub30/Laravel-Infinite-Scrolling-Using-Ajax" target="_blank" class="btn btn-outline-primary">View on GitHub</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card project-card shadow-sm h-100">
-            <div class="card-body">
-              <h5 class="card-title">JavaScript Exercises & Coding Challenges</h5>
-              <p class="card-text">A growing collection of JavaScript coding exercises and algorithmic challenges. This repository includes solutions to problems focused on logic building, DOM manipulation, array/string manipulation, number processing, and more. Ideal for practicing and mastering core JavaScript concepts.</p>
-              <a href="https://github.com/RanaGithub30/Javascript-exercises/tree/master" target="_blank" class="btn btn-outline-primary">View on GitHub</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card project-card shadow-sm h-100">
-            <div class="card-body">
-              <h5 class="card-title">Laravel Multi-Bot Automation with AI & Chatbots</h5>
-              <p class="card-text">A Laravel-based automation system that integrates multiple chatbots, including a Gemini-powered AI assistant and a rule-based automated chatbot for handling basic FAQs. Designed to support scalable, modular interactions across platforms, this project demonstrates seamless bot integration, real-time responses, and intelligent conversation handling.</p>
-              <a href="https://github.com/RanaGithub30/Laravel-multi-bot-automation/tree/main" target="_blank" class="btn btn-outline-primary">View on GitHub</a>
-            </div>
-          </div>
+    <style>
+      #scrollTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 40px;
+        right: 30px;
+        z-index: 99;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm"> -->
+    <nav
+      class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Rana Saha</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <!-- <li class="nav-item"><a class="nav-link" href="./Notes/notes.html">Notes</a></li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="./Tutorials/tutorial.html"
+                >Tutorials/Blogs</a
+              >
+            </li>
+          </ul>
+          <button id="theme-toggle" class="btn btn-sm btn-outline-light ms-3">
+            Toggle Theme
+          </button>
         </div>
       </div>
-      <div id="view-more-btn" class="text-center">
-        <a href="https://github.com/RanaGithub30?tab=repositories" target="_blank"><button class="btn btn-primary">View More Projects</button></a>
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- Skills Section -->
-  <section id="skills" class="py-5 bg-dark">
-    <div class="container text-center text-white">
-      <h2 class="section-title mb-4">Skills & Technologies</h2>
-      <div class="skills-marquee">
-        <div class="skills-track">
-          <img src="https://static-00.iconduck.com/assets.00/php-icon-2048x2048-jyo8hbbt.png" alt="PHP">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt4hgAj2QByaNVhFdb3OYDtsidv54ynE0QOw&s" alt="Laravel">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" alt="Bootstrap">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+    <!-- Hero Section -->
+    <section class="hero text-white text-center py-5 bg-primary">
+      <div class="container">
+        <h1 class="display-4">Hi, I'm <strong>Rana Saha</strong></h1>
+        <p class="lead">
+          Backend Developer | Open Source Contributor | Tech Blogger
+        </p>
+        <a
+          href="https://github.com/RanaGithub30?tab=repositories"
+          target="_blank"
+          class="btn btn-outline-light mt-3"
+          >Explore My Work</a
+        >
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container text-center">
+        <h2 class="section-title">About Me</h2>
+        <p class="lead">
+          I'm a backend developer with 4+ years of experience in Laravel and
+          Node.js, dedicated to building robust and scalable web applications.
+          I'm passionate about automation, performance, open-source, and
+          mentoring aspiring developers. I also share insights and tutorials
+          through blogs.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center section-title">Projects</h2>
+        <div class="row">
+          <!-- Project 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card project-card shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="card-title">Laravel Universal CRUD Generator</h5>
+                <p class="card-text">
+                  A Laravel project that automatically generates full CRUD
+                  (Create, Read, Update, Delete) functionality for all Eloquent
+                  models.
+                </p>
+                <a
+                  href="https://github.com/RanaGithub30/CRUD-for-all-Model-in-Laravel"
+                  target="_blank"
+                  class="btn btn-outline-primary"
+                  >View on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card project-card shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="card-title">JavaScript Mini Projects Collection</h5>
+                <p class="card-text">
+                  A curated collection of mini JavaScript projects demonstrating
+                  core concepts like DOM manipulation, API handling,
+                  event-driven logic, and interactive UI components.
+                </p>
+                <a
+                  href="https://github.com/RanaGithub30/Javascript-Projects"
+                  target="_blank"
+                  class="btn btn-outline-primary"
+                  >View on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card project-card shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="card-title">Laravel Infinite Scrolling with AJAX</h5>
+                <p class="card-text">
+                  A Laravel demo project implementing infinite scroll pagination
+                  using AJAX and jQuery. Seamlessly loads content as users
+                  scroll down, enhancing UX and performance.
+                </p>
+                <a
+                  href="https://github.com/RanaGithub30/Laravel-Infinite-Scrolling-Using-Ajax"
+                  target="_blank"
+                  class="btn btn-outline-primary"
+                  >View on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card project-card shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="card-title">
+                  JavaScript Exercises & Coding Challenges
+                </h5>
+                <p class="card-text">
+                  A growing collection of JavaScript coding exercises and
+                  algorithmic challenges. This repository includes solutions to
+                  problems focused on logic building, DOM manipulation,
+                  array/string manipulation, number processing, and more. Ideal
+                  for practicing and mastering core JavaScript concepts.
+                </p>
+                <a
+                  href="https://github.com/RanaGithub30/Javascript-exercises/tree/master"
+                  target="_blank"
+                  class="btn btn-outline-primary"
+                  >View on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card project-card shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Laravel Multi-Bot Automation with AI & Chatbots
+                </h5>
+                <p class="card-text">
+                  A Laravel-based automation system that integrates multiple
+                  chatbots, including a Gemini-powered AI assistant and a
+                  rule-based automated chatbot for handling basic FAQs. Designed
+                  to support scalable, modular interactions across platforms,
+                  this project demonstrates seamless bot integration, real-time
+                  responses, and intelligent conversation handling.
+                </p>
+                <a
+                  href="https://github.com/RanaGithub30/Laravel-multi-bot-automation/tree/main"
+                  target="_blank"
+                  class="btn btn-outline-primary"
+                  >View on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="view-more-btn" class="text-center">
+          <a
+            href="https://github.com/RanaGithub30?tab=repositories"
+            target="_blank"
+            ><button class="btn btn-primary">View More Projects</button></a
+          >
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Blog Section -->
-  <!-- <section id="blogs" class="py-5">
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-dark">
+      <div class="container text-center text-white">
+        <h2 class="section-title mb-4">Skills & Technologies</h2>
+        <div class="skills-marquee">
+          <div class="skills-track">
+            <img
+              src="https://static-00.iconduck.com/assets.00/php-icon-2048x2048-jyo8hbbt.png"
+              alt="PHP"
+            />
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt4hgAj2QByaNVhFdb3OYDtsidv54ynE0QOw&s"
+              alt="Laravel"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+              alt="Node.js"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              alt="HTML5"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              alt="CSS3"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"
+              alt="Bootstrap"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+              alt="MySQL"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+              alt="MongoDB"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              alt="Git"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              alt="GitHub"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <!-- <section id="blogs" class="py-5">
     <div class="container text-center">
       <h2 class="section-title">Latest Blog Posts</h2>
       <div class="row justify-content-center">
@@ -161,36 +296,81 @@
     </div>
   </section> -->
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="section-title">Get in Touch</h2>
-      <p>You can reach me via email or connect through GitHub and LinkedIn.</p>
-      <div class="d-flex justify-content-center gap-3 mt-3 flex-wrap">
-        <a href="mailto:ranasaha03edu@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> Email</a>
-        <a href="https://github.com/RanaGithub30?tab=repositories" target="_blank" class="btn btn-dark"><i class="fab fa-github"></i> GitHub</a>
-        <a href="https://www.linkedin.com/in/rana-saha-b2a7b3201/" target="_blank" class="btn btn-info text-white"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="section-title">Get in Touch</h2>
+        <p>
+          You can reach me via email or connect through GitHub and LinkedIn.
+        </p>
+        <div class="d-flex justify-content-center gap-3 mt-3 flex-wrap">
+          <a href="mailto:ranasaha03edu@gmail.com" class="btn btn-primary"
+            ><i class="fas fa-envelope"></i> Email</a
+          >
+          <a
+            href="https://github.com/RanaGithub30?tab=repositories"
+            target="_blank"
+            class="btn btn-dark"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/rana-saha-b2a7b3201/"
+            target="_blank"
+            class="btn btn-info text-white"
+            ><i class="fab fa-linkedin"></i> LinkedIn</a
+          >
+        </div>
+        <a
+          href="./assets/Rana-saha-resume.pdf"
+          download
+          class="btn btn-primary mt-3"
+        >
+          Download Resume
+        </a>
       </div>
-      <!-- <a href="#" download="Rana_Saha_Resume.pdf" class="btn btn-primary mt-3">
-        Download Resume
-      </a> -->
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="text-center py-3 bg-dark text-white">
-    <div class="container">
-      <small>&copy; 2025 Rana Saha. Built with ❤️ using HTML, Bootstrap, and GitHub Pages.</small>
-    </div>
-  </footer>
+    <button
+      onclick="topFunction()"
+      id="scrollTopBtn"
+      title="Go to top"
+      class="btn btn-primary"
+    >
+      ↑
+    </button>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.getElementById('theme-toggle').addEventListener('click', function() {
-      const htmlEl = document.documentElement;
-      const currentTheme = htmlEl.getAttribute('data-bs-theme');
-      htmlEl.setAttribute('data-bs-theme', currentTheme === 'dark' ? 'light' : 'dark');
-    });
-  </script>
-</body>
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-dark text-white">
+      <div class="container">
+        <small
+          >&copy; 2025 Rana Saha. Built with ❤️ using HTML, Bootstrap, and
+          GitHub Pages.</small
+        >
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document
+        .getElementById("theme-toggle")
+        .addEventListener("click", function () {
+          const htmlEl = document.documentElement;
+          const currentTheme = htmlEl.getAttribute("data-bs-theme");
+          htmlEl.setAttribute(
+            "data-bs-theme",
+            currentTheme === "dark" ? "light" : "dark"
+          );
+        });
+    </script>
+
+    <script>
+      const btn = document.getElementById("scrollTopBtn");
+      window.onscroll = () => {
+        btn.style.display = window.scrollY > 300 ? "block" : "none";
+      };
+      function topFunction() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+  </body>
 </html>
