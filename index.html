@@ -1,379 +1,587 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Rana Saha | Portfolio</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
+    <meta name="theme-color" content="#f5f7f8" />
+    <meta
+      name="description"
+      content="Rana Saha is a senior PHP and Laravel backend developer with nearly five years of professional experience building, integrating, debugging, and maintaining business applications."
     />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      rel="stylesheet"
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Rana Saha | Laravel & PHP Backend Developer" />
+    <meta
+      property="og:description"
+      content="Laravel backend development, REST APIs, database engineering, integrations, debugging, and ongoing application support."
     />
+    <meta property="og:url" content="https://ranagithub30.github.io/" />
+    <title>Rana Saha | Senior Laravel &amp; PHP Backend Developer</title>
+    <link rel="canonical" href="https://ranagithub30.github.io/" />
     <link rel="stylesheet" href="./public/css/style.css" />
-
-    <style>
-      #scrollTopBtn {
-        display: none;
-        position: fixed;
-        bottom: 40px;
-        right: 30px;
-        z-index: 99;
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Rana Saha",
+        "jobTitle": "Senior Laravel / PHP Backend Developer",
+        "url": "https://ranagithub30.github.io/",
+        "email": "mailto:ranasaha03edu@gmail.com",
+        "sameAs": [
+          "https://github.com/RanaGithub30",
+          "https://www.linkedin.com/in/rana-saha-b2a7b3201/"
+        ],
+        "knowsAbout": [
+          "PHP",
+          "Laravel",
+          "REST API development",
+          "MySQL",
+          "Backend development"
+        ]
       }
-    </style>
+    </script>
   </head>
   <body>
-    <!-- Navbar -->
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm"> -->
-    <nav
-      class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top shadow-sm"
-    >
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="#">Rana Saha</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <!-- <li class="nav-item"><a class="nav-link" href="./Notes/notes.html">Notes</a></li> -->
-            <li class="nav-item">
-              <a class="nav-link" href="./Tutorials/tutorial.html"
-                >Tutorials/Blogs</a
-              >
-            </li>
-          </ul>
-          <button id="theme-toggle" class="btn btn-sm btn-outline-light ms-3">
-            Toggle Theme
-          </button>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero text-white text-center py-5 bg-primary">
-      <div class="container">
-        <h1 class="display-4">Hi, I'm <strong>Rana Saha</strong></h1>
-        <p class="lead">
-          Backend Developer | Open Source Contributor | Tech Blogger
-        </p>
-        <a
-          href="https://github.com/RanaGithub30?tab=repositories"
-          target="_blank"
-          class="btn btn-outline-light mt-3"
-          >Explore My Work</a
-        >
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-5">
-      <div class="container text-center">
-        <h2 class="section-title">About Me</h2>
-        <p class="lead">
-          I'm a backend developer with 4+ years of experience in Laravel and
-          Node.js, dedicated to building robust and scalable web applications.
-          I'm passionate about automation, performance, open-source, and
-          mentoring aspiring developers. I also share insights and tutorials
-          through blogs.
-        </p>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-5 bg-light">
-      <div class="container">
-        <h2 class="text-center section-title">Projects</h2>
-        <div class="row">
-          <!-- Project 1 -->
-          <div class="col-md-4 mb-4">
-            <div class="card project-card shadow-sm h-100">
-              <div class="card-body">
-                <h5 class="card-title">Laravel Universal CRUD Generator</h5>
-                <p class="card-text">
-                  A Laravel project that automatically generates full CRUD
-                  (Create, Read, Update, Delete) functionality for all Eloquent
-                  models.
-                </p>
-                <a
-                  href="https://github.com/RanaGithub30/CRUD-for-all-Model-in-Laravel"
-                  target="_blank"
-                  class="btn btn-outline-primary"
-                  >View on GitHub</a
-                >
-              </div>
-            </div>
-          </div>
-          <!-- Project 2 -->
-          <div class="col-md-4 mb-4">
-            <div class="card project-card shadow-sm h-100">
-              <div class="card-body">
-                <h5 class="card-title">JavaScript Mini Projects Collection</h5>
-                <p class="card-text">
-                  A curated collection of mini JavaScript projects demonstrating
-                  core concepts like DOM manipulation, API handling,
-                  event-driven logic, and interactive UI components.
-                </p>
-                <a
-                  href="https://github.com/RanaGithub30/Javascript-Projects"
-                  target="_blank"
-                  class="btn btn-outline-primary"
-                  >View on GitHub</a
-                >
-              </div>
-            </div>
-          </div>
-          <!-- Project 3 -->
-          <div class="col-md-4 mb-4">
-            <div class="card project-card shadow-sm h-100">
-              <div class="card-body">
-                <h5 class="card-title">Laravel Infinite Scrolling with AJAX</h5>
-                <p class="card-text">
-                  A Laravel demo project implementing infinite scroll pagination
-                  using AJAX and jQuery. Seamlessly loads content as users
-                  scroll down, enhancing UX and performance.
-                </p>
-                <a
-                  href="https://github.com/RanaGithub30/Laravel-Infinite-Scrolling-Using-Ajax"
-                  target="_blank"
-                  class="btn btn-outline-primary"
-                  >View on GitHub</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card project-card shadow-sm h-100">
-              <div class="card-body">
-                <h5 class="card-title">
-                  JavaScript Exercises & Coding Challenges
-                </h5>
-                <p class="card-text">
-                  A growing collection of JavaScript coding exercises and
-                  algorithmic challenges. This repository includes solutions to
-                  problems focused on logic building, DOM manipulation,
-                  array/string manipulation, number processing, and more. Ideal
-                  for practicing and mastering core JavaScript concepts.
-                </p>
-                <a
-                  href="https://github.com/RanaGithub30/Javascript-exercises/tree/master"
-                  target="_blank"
-                  class="btn btn-outline-primary"
-                  >View on GitHub</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card project-card shadow-sm h-100">
-              <div class="card-body">
-                <h5 class="card-title">
-                  Laravel Multi-Bot Automation with AI & Chatbots
-                </h5>
-                <p class="card-text">
-                  A Laravel-based automation system that integrates multiple
-                  chatbots, including a Gemini-powered AI assistant and a
-                  rule-based automated chatbot for handling basic FAQs. Designed
-                  to support scalable, modular interactions across platforms,
-                  this project demonstrates seamless bot integration, real-time
-                  responses, and intelligent conversation handling.
-                </p>
-                <a
-                  href="https://github.com/RanaGithub30/Laravel-multi-bot-automation/tree/main"
-                  target="_blank"
-                  class="btn btn-outline-primary"
-                  >View on GitHub</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="view-more-btn" class="text-center">
-          <a
-            href="https://github.com/RanaGithub30?tab=repositories"
-            target="_blank"
-            ><button class="btn btn-primary">View More Projects</button></a
-          >
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-5 bg-dark">
-      <div class="container text-center text-white">
-        <h2 class="section-title mb-4">Skills & Technologies</h2>
-        <div class="skills-marquee">
-          <div class="skills-track">
-            <img
-              src="https://static-00.iconduck.com/assets.00/php-icon-2048x2048-jyo8hbbt.png"
-              alt="PHP"
-            />
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt4hgAj2QByaNVhFdb3OYDtsidv54ynE0QOw&s"
-              alt="Laravel"
-            />
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-              alt="Node.js"
-            />
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-              alt="JavaScript"
-            />
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-              alt="HTML5"
-            />
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-              alt="CSS3"
-            />
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"
-              alt="Bootstrap"
-            />
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-              alt="MySQL"
-            />
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-              alt="MongoDB"
-            />
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-              alt="Git"
-            />
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-              alt="GitHub"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Blog Section -->
-    <!-- <section id="blogs" class="py-5">
-    <div class="container text-center">
-      <h2 class="section-title">Latest Blog Posts</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <div class="card mb-4 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">How to Create a Laravel Horizon Dashboard from Scratch</h5>
-              <p class="card-text">Step-by-step guide on building a custom Laravel Horizon UI with metrics and worker insights.</p>
-              <a href="./Tutorials/laravel-horizon-dashboard.html" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card mb-4 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">Effortless Dark Mode with Bootstrap 5 and HTML</h5>
-              <p class="card-text">Learn how to build a Bootstrap 5 dark mode toggle using HTML and JavaScript only—no jQuery required!</p>
-              <a href="./Tutorials/bootstrap-dark-mode.html" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a href="./Tutorials/tutorial.html" class="btn btn-outline-secondary">Read My Blog</a>
-    </div>
-  </section> -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
-      <div class="container text-center">
-        <h2 class="section-title">Get in Touch</h2>
-        <p>
-          You can reach me via email or connect through GitHub and LinkedIn.
-        </p>
-        <div class="d-flex justify-content-center gap-3 mt-3 flex-wrap">
-          <a href="mailto:ranasaha03edu@gmail.com" class="btn btn-primary"
-            ><i class="fas fa-envelope"></i> Email</a
-          >
-          <a
-            href="https://github.com/RanaGithub30?tab=repositories"
-            target="_blank"
-            class="btn btn-dark"
-            ><i class="fab fa-github"></i> GitHub</a
-          >
-          <a
-            href="https://www.linkedin.com/in/rana-saha-b2a7b3201/"
-            target="_blank"
-            class="btn btn-info text-white"
-            ><i class="fab fa-linkedin"></i> LinkedIn</a
-          >
-        </div>
-        <a
-          href="./assets/Rana-saha-resume.pdf"
-          download
-          class="btn btn-primary mt-3"
-        >
-          Download Resume
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="Rana Saha home">
+          <span class="brand-mark" aria-hidden="true">RS</span>
+          <span>Rana Saha<span class="brand-role"> / Backend Engineer</span></span>
         </a>
-      </div>
-    </section>
+        <details class="nav-menu" open>
+          <summary aria-label="Open or close navigation menu">
+            <span>Menu</span><span class="menu-icon" aria-hidden="true">☰</span>
+          </summary>
+          <div class="nav-links">
+            <a href="#services">Services</a>
+            <a href="#professional-work">Professional work</a>
+            <a href="#expertise">Expertise</a>
+            <a href="#experience">Experience</a>
+            <a href="#writing">Writing</a>
+            <a class="nav-cta" href="#contact">Discuss a project <span aria-hidden="true">↗</span></a>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+              <span aria-hidden="true">◐</span> <span class="theme-label">Dark theme</span>
+            </button>
+          </div>
+        </details>
+      </nav>
+    </header>
 
-    <button
-      onclick="topFunction()"
-      id="scrollTopBtn"
-      title="Go to top"
-      class="btn btn-primary"
-    >
-      ↑
-    </button>
+    <main id="main">
+      <section class="hero section-shell" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> PHP · LARAVEL · BACKEND ENGINEERING</p>
+          <h1 id="hero-title">I build the backend that keeps your business <span>moving.</span></h1>
+          <p class="hero-lede">
+            Senior Laravel / PHP Backend Developer with nearly 5 years of professional experience. I build and improve APIs, business workflows, integrations, and data-heavy applications—with maintainability and real operating needs in mind.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">Discuss a project <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="#professional-work">Explore backend work <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-meta" aria-label="Work preferences">
+            <span>Remote collaboration</span><span aria-hidden="true">·</span>
+            <span>Freelance engagements</span><span aria-hidden="true">·</span>
+            <a href="mailto:ranasaha03edu@gmail.com">ranasaha03edu@gmail.com</a>
+          </div>
+        </div>
+        <aside class="terminal-card" aria-label="Backend request lifecycle illustration">
+          <div class="terminal-top"><span></span><span></span><span></span><p>request-lifecycle.php</p></div>
+          <div class="terminal-body">
+            <p><span class="code-muted">01</span> <span class="code-key">Route::</span>post(<span class="code-string">'/api/orders'</span>, ...);</p>
+            <p><span class="code-muted">02</span> <span class="code-key">→</span> auth &amp; request validation</p>
+            <p><span class="code-muted">03</span> <span class="code-key">→</span> application business rules</p>
+            <p><span class="code-muted">04</span> <span class="code-key">→</span> transaction &amp; persistence</p>
+            <p><span class="code-muted">05</span> <span class="code-key">→</span> resource response / queued work</p>
+            <div class="terminal-rule"></div>
+            <p class="terminal-note"><span class="code-ok">✓</span> predictable, testable, supportable</p>
+          </div>
+          <div class="terminal-caption">A practical engineering mindset—not a claim about a specific client system.</div>
+        </aside>
+      </section>
 
-    <!-- Footer -->
-    <footer class="text-center py-3 bg-dark text-white">
-      <div class="container">
-        <small
-          >&copy; 2025 Rana Saha. Built with ❤️ using HTML, Bootstrap, and
-          GitHub Pages.</small
-        >
+      <section class="trust-strip" aria-label="Core areas of work">
+        <div class="trust-inner">
+          <span>Laravel application development</span><span>REST API engineering</span><span>MySQL &amp; Eloquent</span><span>Debugging &amp; optimization</span>
+        </div>
+      </section>
+
+      <section class="content-section section-shell" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">01 / ABOUT</p>
+          <h2>Backend work should make the business easier to run.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="body-copy">
+            <p>
+              I’m Rana, a PHP and Laravel developer focused on the application logic behind dependable business software. I work on the parts that need to stay correct as requirements change: API contracts, permissions, data relationships, integrations, background work, and the production issues that can interrupt a team.
+            </p>
+            <p>
+              I can join for a clearly scoped fix or feature, build a backend for a new product, or provide ongoing maintenance. I aim to understand the workflow first, explain trade-offs clearly, and leave code that another developer can support.
+            </p>
+          </div>
+          <div class="about-note">
+            <span class="note-label">HOW I WORK</span>
+            <p><strong>Understand the workflow.</strong> Clarify the user, business rule, and failure cases before implementation.</p>
+            <p><strong>Make the contract explicit.</strong> Keep validation, authorization, responses, and errors understandable.</p>
+            <p><strong>Leave a useful handoff.</strong> Document decisions and operational considerations—not just the happy path.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section section-tinted" id="services">
+        <div class="section-shell">
+          <div class="section-heading section-heading-wide">
+            <div><p class="eyebrow">02 / SERVICES</p><h2>Backend help for the work in front of you.</h2></div>
+            <p class="section-intro">Bring a new feature, a stalled integration, a slow query, or an application that needs a reliable pair of hands.</p>
+          </div>
+          <div class="service-grid">
+            <article class="service-card"><span class="card-index">01</span><h3>Laravel backend development</h3><p>Build business workflows, application features, and maintainable Laravel services around your requirements.</p></article>
+            <article class="service-card"><span class="card-index">02</span><h3>PHP application development</h3><p>Extend or maintain PHP applications with clear boundaries, safe changes, and a practical handover.</p></article>
+            <article class="service-card"><span class="card-index">03</span><h3>REST API development</h3><p>Design and implement API endpoints with authentication, authorization, validation, and consistent responses.</p></article>
+            <article class="service-card"><span class="card-index">04</span><h3>Laravel bug fixing</h3><p>Trace unexpected behavior through application logic and data flow, then make and verify a focused fix.</p></article>
+            <article class="service-card"><span class="card-index">05</span><h3>Database query optimization</h3><p>Investigate slow database work with query inspection, indexing considerations, and relationship loading.</p></article>
+            <article class="service-card"><span class="card-index">06</span><h3>Third-party API integration</h3><p>Connect external services and account for credentials, timeouts, error responses, and retry behavior.</p></article>
+            <article class="service-card"><span class="card-index">07</span><h3>Application maintenance</h3><p>Keep an existing Laravel application healthy with debugging, careful updates, and ongoing backend support.</p></article>
+            <article class="service-card"><span class="card-index">08</span><h3>Backend architecture improvements</h3><p>Improve a growing codebase in small steps so changes are easier to test, understand, and extend.</p></article>
+          </div>
+          <div class="engagement-bar">
+            <strong>Flexible engagement</strong>
+            <span>Single task or bug fix</span><span>Project-based delivery</span><span>Ongoing backend support</span>
+            <a href="#contact">Tell me what you need <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Temporarily hidden personal GitHub portfolio projects.
+      <section class="content-section section-shell" id="projects">
+        <div class="section-heading section-heading-wide">
+          <div><p class="eyebrow">03 / SELECTED PROJECTS</p><h2>Public work, with the scope stated honestly.</h2></div>
+          <a class="text-link" href="https://github.com/RanaGithub30?tab=repositories" target="_blank" rel="noopener noreferrer">Browse all GitHub repositories <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="project-disclosure">
+          These are public GitHub portfolio projects, not presented as client engagements. Descriptions below use the scope already published on this portfolio; they do not imply unverified database schemas, API routes, authentication, queue behavior, benchmarks, or client results. Review each repository for implementation specifics.
+        </p>
+        <div class="project-list">
+          <article class="project-card" id="project-multibot">
+            <div class="project-topline"><span class="project-type">LARAVEL · INTEGRATIONS</span><span class="project-number">PROJECT 01</span></div>
+            <div class="project-content">
+              <div><h3>Multi-bot automation</h3><p class="project-summary">A Laravel project described as combining a Gemini-powered AI assistant with a rule-based FAQ chatbot.</p></div>
+              <div class="project-details">
+                <p><strong>Problem space</strong> FAQ automation and AI-assisted conversations call for different response approaches.</p>
+                <p><strong>Documented scope</strong> The existing portfolio description names a Gemini-powered assistant and an automated FAQ bot. It does not specify their runtime routing or fallback behavior.</p>
+                <p><strong>Engineering review</strong> Inspect integration boundaries, credential handling, request failures, and response behavior in the source before describing implementation details.</p>
+                <a class="text-link" href="https://github.com/RanaGithub30/Laravel-multi-bot-automation/tree/main" target="_blank" rel="noopener noreferrer">Review repository <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+            <div class="project-flow" aria-label="Conceptual capabilities from the published project summary">
+              <span>Incoming question</span><span class="flow-arrow" aria-hidden="true">→</span><span>FAQ chatbot or AI assistant</span><span class="flow-arrow" aria-hidden="true">→</span><span>Response</span>
+              <small>Conceptual capability map from the published summary; not an audited runtime trace.</small>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-topline"><span class="project-type">LARAVEL · ELOQUENT</span><span class="project-number">PROJECT 02</span></div>
+            <div class="project-content">
+              <div><h3>Universal CRUD generator</h3><p class="project-summary">A Laravel project described as generating CRUD functionality for Eloquent models.</p></div>
+              <div class="project-details">
+                <p><strong>Problem space</strong> Repeating common create, read, update, and delete scaffolding across models can slow early development.</p>
+                <p><strong>Documented scope</strong> The existing portfolio description says the project generates CRUD functionality for Eloquent models. Specific generated artifacts and safeguards are not documented here.</p>
+                <p><strong>Engineering review</strong> Review generated routes, validation, authorization, relationship handling, and schema assumptions in the repository before relying on them.</p>
+                <a class="text-link" href="https://github.com/RanaGithub30/CRUD-for-all-Model-in-Laravel" target="_blank" rel="noopener noreferrer">Review repository <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+            <div class="project-tags"><span>Laravel</span><span>PHP</span><span>Eloquent ORM</span><span>CRUD</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-topline"><span class="project-type">LARAVEL · AJAX</span><span class="project-number">PROJECT 03</span></div>
+            <div class="project-content">
+              <div><h3>Infinite scrolling with AJAX</h3><p class="project-summary">A Laravel demonstration of loading paginated content as a visitor scrolls, using AJAX and jQuery.</p></div>
+              <div class="project-details">
+                <p><strong>Problem space</strong> Incremental loading is an alternative to presenting a long result set on one page.</p>
+                <p><strong>Documented scope</strong> The existing portfolio description identifies Laravel, AJAX, jQuery, and infinite-scroll pagination.</p>
+                <p><strong>Engineering review</strong> Confirm pagination strategy, response shape, ordering, and behavior at the end of the dataset in the source before making performance claims.</p>
+                <a class="text-link" href="https://github.com/RanaGithub30/Laravel-Infinite-Scrolling-Using-Ajax" target="_blank" rel="noopener noreferrer">Review repository <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+            <div class="project-tags"><span>Laravel</span><span>AJAX</span><span>jQuery</span><span>Pagination</span></div>
+          </article>
+        </div>
+        <div class="other-work">
+          <h3>Other repositories</h3>
+          <p>JavaScript mini projects and coding exercises are available on GitHub. They are secondary to my PHP/Laravel backend work.</p>
+          <a href="https://github.com/RanaGithub30/Javascript-Projects" target="_blank" rel="noopener noreferrer">JavaScript projects <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/RanaGithub30/Javascript-exercises/tree/master" target="_blank" rel="noopener noreferrer">JavaScript exercises <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+      -->
+
+      <section class="content-section professional-work-section" id="professional-work" aria-labelledby="professional-work-title">
+        <div class="section-shell">
+          <div class="section-heading professional-work-heading">
+            <p class="eyebrow">03 / PROFESSIONAL CASE STUDIES</p>
+            <h2 id="professional-work-title">Selected Professional Work</h2>
+            <p class="professional-work-subtitle">Real-world backend engineering experience across mobility platforms and multi-tenant business applications.</p>
+            <p class="professional-work-disclosure">These are professional projects from my development experience, separate from the personal GitHub repositories above. The descriptions distinguish platform context from my individual contributions and avoid undisclosed implementation details.</p>
+          </div>
+
+          <div class="professional-case-list">
+            <article class="professional-case" aria-labelledby="idrive-title">
+              <header class="professional-case-header">
+                <div>
+                  <span class="professional-case-label">MOBILITY · PROFESSIONAL EXPERIENCE</span>
+                  <h3 id="idrive-title">iDrive <span>— Vehicle Rental &amp; Mobility Platform</span></h3>
+                </div>
+                <div class="technology-badges" aria-label="Technology stack">
+                  <span>Laravel</span><span>MySQL</span><span>Redis</span><span>JWT</span>
+                </div>
+              </header>
+
+              <div class="professional-case-summary">
+                <div>
+                  <span class="case-field-label">INDUSTRY</span>
+                  <p>Mobility &amp; vehicle rental</p>
+                </div>
+                <div>
+                  <span class="case-field-label">PROJECT TYPE</span>
+                  <p>Booking, payments &amp; vehicle inventory platform</p>
+                </div>
+                <div>
+                  <span class="case-field-label">BUSINESS CONTEXT</span>
+                  <p>Vehicle rentals depend on coordinated booking, payment-related operations, and inventory workflows. The backend APIs form part of that transactional backbone.</p>
+                </div>
+              </div>
+
+              <div class="professional-role">
+                <span class="case-field-label">MY ROLE &amp; CONTRIBUTIONS</span>
+                <p>I designed and built REST APIs for booking, payment, and inventory management. I also implemented Redis caching and JWT-based authentication. These are my contributions to the platform; I am not claiming to have designed the entire product.</p>
+              </div>
+
+              <div class="case-architecture">
+                <div class="case-architecture-heading">
+                  <span class="case-field-label">BACKEND ARCHITECTURE OVERVIEW</span>
+                  <span class="conceptual-label">Conceptual illustration · not a verified production architecture diagram</span>
+                </div>
+                <div class="case-flow idrive-flow" role="img" aria-label="Conceptual flow: Client Application to Laravel REST API to Authentication to Booking, Payment, and Inventory Services to MySQL and Redis">
+                  <span class="case-flow-node">Client Application</span><span class="case-flow-arrow" aria-hidden="true">→</span>
+                  <span class="case-flow-node">Laravel REST API</span><span class="case-flow-arrow" aria-hidden="true">→</span>
+                  <span class="case-flow-node">Authentication</span><span class="case-flow-arrow" aria-hidden="true">→</span>
+                  <span class="case-flow-node case-flow-group"><span>Booking</span><span>Payment</span><span>Inventory</span><small>Services</small></span><span class="case-flow-arrow" aria-hidden="true">→</span>
+                  <span class="case-flow-node case-flow-data"><span>MySQL</span><span>Redis</span><small>Data &amp; cache</small></span>
+                </div>
+              </div>
+
+              <details class="case-details">
+                <summary>Backend responsibilities, challenges &amp; engineering considerations <span aria-hidden="true">+</span></summary>
+                <div class="case-details-content">
+                  <div class="case-detail-grid">
+                    <section>
+                      <h4>API development &amp; business workflows</h4>
+                      <p>Designed and built REST APIs supporting vehicle booking, payment-related functionality, and inventory management. Those APIs connect core mobility workflows; endpoint contracts and individual payment-provider details are not specified here.</p>
+                    </section>
+                    <section>
+                      <h4>Booking &amp; inventory coordination</h4>
+                      <p>Booking and vehicle inventory are closely related business concerns: concurrent requests make it important to reason about availability and booking state together. My contribution included APIs for both areas. No particular locking, reservation, or conflict-resolution mechanism is claimed.</p>
+                    </section>
+                    <section>
+                      <h4>Payment-related API functionality</h4>
+                      <p>Built REST API functionality for the platform’s payment-related workflows. This describes the area of API work and does not imply a specific payment gateway, settlement process, or payment-state design.</p>
+                    </section>
+                    <section>
+                      <h4>Redis caching &amp; responsiveness</h4>
+                      <p>Implemented Redis caching as part of the backend. Cache keys, cached data, invalidation rules, and measured performance outcomes are not specified here.</p>
+                    </section>
+                    <section>
+                      <h4>JWT authentication &amp; security</h4>
+                      <p>Implemented JWT-based authentication. The portfolio does not assert particular token lifetimes, refresh flows, authorization rules, or token storage practices.</p>
+                    </section>
+                    <section>
+                      <h4>Engineering knowledge demonstrated</h4>
+                      <p>REST API development across related business domains, booking and inventory workflow reasoning, payment-related backend functionality, Redis caching, JWT authentication, and consideration of concurrent booking requests.</p>
+                    </section>
+                  </div>
+                </div>
+              </details>
+
+              <p class="professional-case-cta">Need similar backend engineering expertise for your project? <a href="#contact">Let’s discuss <span aria-hidden="true">↗</span></a></p>
+            </article>
+
+            <article class="professional-case" aria-labelledby="loyalty-title">
+              <header class="professional-case-header">
+                <div>
+                  <span class="professional-case-label">LOYALTY &amp; REWARDS · PROFESSIONAL EXPERIENCE</span>
+                  <h3 id="loyalty-title">Loyalty Magnet <span>— Multi-Tenant Rewards Platform</span></h3>
+                </div>
+                <div class="technology-badges" aria-label="Technology stack">
+                  <span>Laravel</span><span>MySQL</span><span>OAuth2</span>
+                </div>
+              </header>
+
+              <div class="professional-case-summary">
+                <div>
+                  <span class="case-field-label">INDUSTRY</span>
+                  <p>Loyalty &amp; rewards</p>
+                </div>
+                <div>
+                  <span class="case-field-label">PROJECT TYPE</span>
+                  <p>Multi-tenant business application</p>
+                </div>
+                <div>
+                  <span class="case-field-label">BUSINESS CONTEXT</span>
+                  <p>A shared platform serves multiple client brands, each requiring isolated data and brand-specific configuration within a single deployment.</p>
+                </div>
+              </div>
+
+              <div class="professional-role">
+                <span class="case-field-label">MY ROLE &amp; CONTRIBUTIONS</span>
+                <p>I designed the multi-tenant backend architecture for multiple client brands with isolated data and configuration from a single deployment. I built loyalty management REST APIs secured with JWT/OAuth2, preventing cross-tenant data exposure.</p>
+              </div>
+
+              <div class="case-architecture">
+                <div class="case-architecture-heading">
+                  <span class="case-field-label">BACKEND ARCHITECTURE OVERVIEW</span>
+                  <span class="conceptual-label">Conceptual illustration · not a verified production architecture diagram</span>
+                </div>
+                <div class="case-flow loyalty-flow" role="img" aria-label="Conceptual flow: Client Brand to Laravel API to Authentication to Tenant Identification to Tenant Isolation and Authorization to Loyalty Services to MySQL">
+                  <span class="case-flow-node">Client Brand</span><span class="case-flow-arrow" aria-hidden="true">→</span>
+                  <span class="case-flow-node">Laravel API</span><span class="case-flow-arrow" aria-hidden="true">→</span>
+                  <span class="case-flow-node">Authentication</span><span class="case-flow-arrow" aria-hidden="true">→</span>
+                  <span class="case-flow-node">Tenant Identification</span><span class="case-flow-arrow" aria-hidden="true">→</span>
+                  <span class="case-flow-node case-flow-group"><span>Tenant Isolation</span><span>Authorization</span><small>Access boundaries</small></span><span class="case-flow-arrow" aria-hidden="true">→</span>
+                  <span class="case-flow-node">Loyalty Services</span><span class="case-flow-arrow" aria-hidden="true">→</span>
+                  <span class="case-flow-node case-flow-data">MySQL</span>
+                </div>
+              </div>
+
+              <details class="case-details">
+                <summary>Tenant architecture, API security &amp; engineering considerations <span aria-hidden="true">+</span></summary>
+                <div class="case-details-content">
+                  <div class="case-detail-grid">
+                    <section>
+                      <h4>Multi-tenant backend architecture</h4>
+                      <p>Designed a backend architecture for multiple client brands served from a single deployment, with isolated data and brand-specific configuration. The exact tenancy strategy and database schema are not disclosed.</p>
+                    </section>
+                    <section>
+                      <h4>Tenant data isolation</h4>
+                      <p>Tenant isolation is essential so one brand’s requests cannot expose another brand’s data. Data boundaries and the authorization path need to be considered together; no specific database layout or tenant-resolution mechanism is claimed.</p>
+                    </section>
+                    <section>
+                      <h4>Brand-specific configuration</h4>
+                      <p>The platform supports isolated configuration for client brands. The individual configurable fields and configuration storage mechanism are not specified here.</p>
+                    </section>
+                    <section>
+                      <h4>Loyalty management APIs</h4>
+                      <p>Built REST APIs for loyalty management. This describes the API contribution without inventing endpoint names, reward rules, or features not provided.</p>
+                    </section>
+                    <section>
+                      <h4>JWT/OAuth2 authentication &amp; authorization</h4>
+                      <p>Secured the loyalty management APIs with JWT/OAuth2. Authentication establishes a caller identity; authorization and tenant access control are necessary to ensure access stays within the permitted brand context.</p>
+                    </section>
+                    <section>
+                      <h4>Preventing cross-tenant exposure</h4>
+                      <p>The stated security goal was preventing cross-tenant data exposure. Multi-tenancy requires careful coordination between tenant context, data access, and authorization checks. No tenant count, user count, or unverified control mechanism is asserted.</p>
+                    </section>
+                  </div>
+                </div>
+              </details>
+
+              <p class="professional-case-cta">Need similar backend engineering expertise for your project? <a href="#contact">Let’s discuss <span aria-hidden="true">↗</span></a></p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section section-tinted" id="case-studies">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">04 / ENGINEERING LENS</p>
+            <h2>How I assess a backend workflow.</h2>
+          </div>
+          <p class="section-intro">A useful case study should explain the real request path, data rules, failure modes, and trade-offs. This is a general review checklist—not an architecture diagram for a project above.</p>
+          <div class="architecture-panel">
+            <div class="architecture-flow" aria-label="General backend request review flow">
+              <div><span class="architecture-kicker">01 · ENTRY</span><strong>Route &amp; middleware</strong><small>Who can call it?</small></div>
+              <span class="architecture-arrow" aria-hidden="true">→</span>
+              <div><span class="architecture-kicker">02 · CONTRACT</span><strong>Validation &amp; policy</strong><small>Is the request allowed?</small></div>
+              <span class="architecture-arrow" aria-hidden="true">→</span>
+              <div><span class="architecture-kicker">03 · DOMAIN</span><strong>Business rules</strong><small>What must stay true?</small></div>
+              <span class="architecture-arrow" aria-hidden="true">→</span>
+              <div><span class="architecture-kicker">04 · DATA</span><strong>Transaction &amp; query</strong><small>What is persisted?</small></div>
+              <span class="architecture-arrow" aria-hidden="true">→</span>
+              <div><span class="architecture-kicker">05 · OUTPUT</span><strong>Resource &amp; errors</strong><small>What does the caller receive?</small></div>
+            </div>
+            <div class="architecture-foot"><span>Asynchronous work, caching, or external services are introduced when the requirements justify them—not by default.</span><code>review → implement → verify</code></div>
+          </div>
+          <div class="case-study-note">
+            <span class="note-label">ABOUT PROJECT DETAIL</span>
+            <p>My current portfolio summaries do not establish the projects’ actual database relationships, endpoint examples, authentication model, queue setup, or measured performance. I have not invented those details. I can document a deeper case study once the implementation is reviewed and verified against the source.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section section-shell" id="expertise">
+        <div class="section-heading section-heading-wide">
+          <div><p class="eyebrow">05 / TECHNICAL EXPERTISE</p><h2>Tools and concepts for dependable application backends.</h2></div>
+          <p class="section-intro">Core skills are centered on PHP and Laravel. Supporting technologies are listed separately to make my focus clear.</p>
+        </div>
+        <div class="expertise-grid">
+          <article class="expertise-card expertise-primary"><span class="expertise-label">CORE · PHP / LARAVEL</span><h3>Application engineering</h3><p>Laravel architecture, service container and dependency injection, service providers, middleware, custom validation, API resources, Eloquent relationships, policies and gates.</p><div class="skill-tags"><span>PHP</span><span>Laravel</span><span>Eloquent</span><span>Composer</span></div></article>
+          <article class="expertise-card"><span class="expertise-label">DATA</span><h3>MySQL &amp; data access</h3><p>Schema design, indexing, eager loading, query optimization, EXPLAIN analysis, transactions, deadlock handling, and large-dataset considerations.</p><div class="skill-tags"><span>MySQL</span><span>SQL</span><span>Database design</span></div></article>
+          <article class="expertise-card"><span class="expertise-label">HTTP &amp; SECURITY</span><h3>API engineering</h3><p>REST API design, authentication and authorization, rate limiting, versioning, error handling, API documentation, and third-party integrations.</p><div class="skill-tags"><span>Sanctum</span><span>Passport</span><span>JWT</span><span>REST</span></div></article>
+          <article class="expertise-card"><span class="expertise-label">ASYNC &amp; PERFORMANCE</span><h3>Background work &amp; scale</h3><p>Redis caching, queues, jobs, events, background processing, efficient application architecture, and database read/write considerations.</p><div class="skill-tags"><span>Redis</span><span>Queues</span><span>Jobs</span><span>Events</span></div></article>
+          <article class="expertise-card"><span class="expertise-label">INTEGRATIONS</span><h3>External services</h3><p>Payment gateway and external API integrations, webhooks, identity verification services, and AI API integrations.</p><div class="skill-tags"><span>Webhooks</span><span>External APIs</span><span>Payments</span></div></article>
+          <article class="expertise-card expertise-secondary"><span class="expertise-label">ADDITIONAL EXPOSURE</span><h3>Supporting technologies</h3><p>Node.js, Express.js, MongoDB, and JavaScript. React is a learning-level skill, not a service I position myself around.</p><div class="skill-tags"><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>JavaScript</span><span>React · learning</span></div></article>
+        </div>
+      </section>
+
+      <section class="content-section section-tinted" id="experience">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">06 / EXPERIENCE</p>
+            <h2>Nearly five years working in PHP and Laravel.</h2>
+          </div>
+          <div class="experience-panel">
+            <div class="experience-mark" aria-hidden="true">~5</div>
+            <div><span class="experience-caption">YEARS · PROFESSIONAL PHP / LARAVEL DEVELOPMENT</span><h3>Backend-focused, from feature work to maintenance.</h3><p>My professional focus is building and supporting PHP/Laravel applications. I work across application logic, REST APIs, relational data, integrations, debugging, and performance improvement. I have not listed employers or client case studies here because verifiable project details were not supplied for this portfolio revision.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section section-shell" id="workflow">
+        <div class="section-heading section-heading-wide">
+          <div><p class="eyebrow">07 / DEVELOPMENT WORKFLOW</p><h2>Small, clear steps. No surprise handoff.</h2></div>
+          <p class="section-intro">A practical process that works for an individual task, a defined project, or ongoing support.</p>
+        </div>
+        <ol class="workflow-list">
+          <li><span>01</span><div><h3>Understand</h3><p>Clarify the user, business outcome, existing system, constraints, and acceptance criteria.</p></div></li>
+          <li><span>02</span><div><h3>Inspect</h3><p>Trace the relevant code and data flow; surface assumptions, risks, and integration dependencies.</p></div></li>
+          <li><span>03</span><div><h3>Implement</h3><p>Make a focused, maintainable change with appropriate validation and failure handling.</p></div></li>
+          <li><span>04</span><div><h3>Verify &amp; hand over</h3><p>Run relevant checks, summarize the change, and note anything the team should monitor or decide next.</p></div></li>
+        </ol>
+      </section>
+
+      <section class="content-section section-tinted" id="writing">
+        <div class="section-shell">
+          <div class="section-heading section-heading-wide">
+            <div><p class="eyebrow">08 / TECHNICAL WRITING</p><h2>Notes for learning and sharing.</h2></div>
+            <a class="text-link" href="https://thelearnwithrana.blogspot.com" target="_blank" rel="noopener noreferrer">Visit tutorials &amp; blog <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="writing-grid">
+            <a class="writing-card" href="./Notes/Laravel/collection.html"><span class="writing-topic">LARAVEL · DATA</span><h3>Understanding Laravel Collections</h3><p>Notes on working with chainable collection operations.</p><span class="writing-arrow" aria-hidden="true">↗</span></a>
+            <a class="writing-card" href="./Notes/Laravel/broadcast.html"><span class="writing-topic">LARAVEL · EVENTS</span><h3>Real-time communication with Laravel Broadcasting</h3><p>An introduction to server-side events and broadcasting concepts.</p><span class="writing-arrow" aria-hidden="true">↗</span></a>
+            <a class="writing-card writing-card-external" href="https://thelearnwithrana.blogspot.com" target="_blank" rel="noopener noreferrer"><span class="writing-topic">BLOG · EXTERNAL</span><h3>More tutorials and articles</h3><p>Browse the existing blog for additional learning notes.</p><span class="writing-arrow" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section section-shell" id="faq">
+        <div class="section-heading">
+          <p class="eyebrow">09 / FAQ</p>
+          <h2>Before we get started.</h2>
+        </div>
+        <div class="faq-list">
+          <details><summary>What kinds of backend work can you take on?<span aria-hidden="true">+</span></summary><p>Laravel/PHP development, REST APIs, bug fixing, query investigations, third-party integrations, application maintenance, and backend architecture improvements.</p></details>
+          <details><summary>Can you work with an existing application?<span aria-hidden="true">+</span></summary><p>Yes. We can start with a defined issue or feature. I’ll first understand the relevant code and expected behavior before recommending a change.</p></details>
+          <details><summary>How can I engage you?<span aria-hidden="true">+</span></summary><p>For a single task, share its scope and acceptance criteria. For project-based work, share the business workflow and requirements. For ongoing support, tell me about the application and the help your team needs.</p></details>
+          <details><summary>Do you offer remote freelance work?<span aria-hidden="true">+</span></summary><p>Yes. I’m open to remote freelance discussions for individual tasks, project-based development, and ongoing backend support.</p></details>
+          <details><summary>Do you provide frontend or UI/UX design services?<span aria-hidden="true">+</span></summary><p>No. My professional positioning is PHP/Laravel backend development. React is a learning-level supporting skill, not a frontend service offering.</p></details>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="section-shell contact-grid">
+          <div class="contact-copy">
+            <p class="eyebrow">10 / CONTACT</p>
+            <h2>Have a backend problem to solve?</h2>
+            <p>Tell me what you’re building, fixing, integrating, or maintaining. A short note is enough to start a conversation.</p>
+            <div class="contact-links">
+              <a href="mailto:ranasaha03edu@gmail.com">ranasaha03edu@gmail.com <span aria-hidden="true">↗</span></a>
+              <a href="https://www.linkedin.com/in/rana-saha-b2a7b3201/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/RanaGithub30" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+              <a href="./assets/Rana-Saha.pdf" target="_blank" rel="noopener noreferrer">View resume (PDF) <span aria-hidden="true">↗</span></a>
+            </div>
+            <p class="availability"><span class="status-dot" aria-hidden="true"></span> Open to remote freelance conversations</p>
+          </div>
+          <form class="enquiry-form" id="enquiry-form">
+            <h3>Project enquiry</h3>
+            <p>This static portfolio opens an email draft—your message is not sent or stored on this website.</p>
+            <label for="enquiry-name">Your name</label>
+            <input id="enquiry-name" name="name" autocomplete="name" required />
+            <label for="enquiry-email">Email address</label>
+            <input id="enquiry-email" name="email" type="email" autocomplete="email" required />
+            <label for="enquiry-type">What do you need help with?</label>
+            <select id="enquiry-type" name="project-type" required>
+              <option value="">Choose a type of work</option>
+              <option>Laravel / PHP development</option>
+              <option>REST API development</option>
+              <option>Bug fixing or debugging</option>
+              <option>Database optimization</option>
+              <option>Third-party integration</option>
+              <option>Ongoing backend support</option>
+              <option>Other backend project</option>
+            </select>
+            <label for="enquiry-details">A little about the project</label>
+            <textarea id="enquiry-details" name="details" rows="4" required></textarea>
+            <button class="button button-primary form-submit" type="submit">Prepare email enquiry <span aria-hidden="true">↗</span></button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-shell footer-inner">
+        <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">RS</span><span>Rana Saha</span></a>
+        <p>PHP / Laravel backend development · Remote freelance</p>
+        <a href="#home">Back to top ↑</a>
+        <small>© <span id="current-year">2026</span> Rana Saha. Built with semantic HTML, CSS, and GitHub Pages.</small>
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-      document
-        .getElementById("theme-toggle")
-        .addEventListener("click", function () {
-          const htmlEl = document.documentElement;
-          const currentTheme = htmlEl.getAttribute("data-bs-theme");
-          htmlEl.setAttribute(
-            "data-bs-theme",
-            currentTheme === "dark" ? "light" : "dark"
-          );
-        });
-    </script>
+      const themeButton = document.getElementById("theme-toggle");
+      const themeLabel = themeButton.querySelector(".theme-label");
+      const navigationMenu = document.querySelector(".nav-menu");
 
-    <script>
-      const btn = document.getElementById("scrollTopBtn");
-      window.onscroll = () => {
-        btn.style.display = window.scrollY > 300 ? "block" : "none";
-      };
-      function topFunction() {
-        window.scrollTo({ top: 0, behavior: "smooth" });
+      if (window.matchMedia("(max-width: 960px)").matches) {
+        navigationMenu.removeAttribute("open");
       }
+
+      themeButton.addEventListener("click", () => {
+        const useDarkTheme = document.documentElement.dataset.theme !== "dark";
+        document.documentElement.dataset.theme = useDarkTheme ? "dark" : "light";
+        themeButton.setAttribute("aria-pressed", String(useDarkTheme));
+        themeButton.setAttribute(
+          "aria-label",
+          useDarkTheme ? "Switch to light theme" : "Switch to dark theme"
+        );
+        themeLabel.textContent = useDarkTheme ? "Light theme" : "Dark theme";
+      });
+
+      document.getElementById("enquiry-form").addEventListener("submit", (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.currentTarget);
+        const subject = `Project enquiry: ${formData.get("project-type")}`;
+        const body = [
+          `Name: ${formData.get("name")}`,
+          `Email: ${formData.get("email")}`,
+          `Project type: ${formData.get("project-type")}`,
+          "",
+          "Project details:",
+          formData.get("details")
+        ].join("\n");
+        const mailto = `mailto:ranasaha03edu@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        document.getElementById("form-status").textContent =
+          "Opening your email application. If it does not open, email ranasaha03edu@gmail.com directly.";
+        window.location.href = mailto;
+      });
+
+      document.getElementById("current-year").textContent = new Date().getFullYear();
+
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navigationMenu.removeAttribute("open");
+        });
+      });
     </script>
   </body>
 </html>
